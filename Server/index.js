@@ -11,6 +11,6 @@ const PORT = process.env.PORT
 
 app.use(cors())
 app.use(bodyParser.json());
-app.use('/' , taskRouter )
+app.use('/task' , taskRouter )
 
 app.listen(PORT , () => console.log(`Server running on ${PORT}`))
